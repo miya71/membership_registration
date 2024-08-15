@@ -3,7 +3,7 @@ package bean;
 import java.io.Serializable;
 
 public class MemberBean implements Serializable {
-    private String id;
+	private String id;
 	private String name;
 	private String gender;
 	private String year;
@@ -14,8 +14,8 @@ public class MemberBean implements Serializable {
 	
 	public MemberBean() {
 	}
-    public MemberBean(String id, String name, String gender, String year, String month, String day, String email, String password) {
-        this.id = id;
+	public MemberBean(String id, String name, String gender, String year, String month, String day, String email, String password) {
+		this.id = id;
 		this.name = name;
 		this.gender = gender;
 		this.year = year;
@@ -33,13 +33,12 @@ public class MemberBean implements Serializable {
 		this.email = email;
 		this.password = password;
 	}
-
-    public String getId() {
-        return id;
-    }
-    public void setId(String id) {
-        this.id = id;
-    }
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public String getName() {
 		return name;
 	}
