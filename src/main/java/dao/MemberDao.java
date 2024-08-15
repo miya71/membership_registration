@@ -50,9 +50,9 @@ public class MemberDao {
 		} catch(SQLException e) {
 			e.printStackTrace();
 			return false;
-			} finally {
-				// MySQLの接続を切る
-				try {
+		} finally {
+			// MySQLの接続を切る
+			try {
 				if(con != null) {
 					con.close();
 				}
