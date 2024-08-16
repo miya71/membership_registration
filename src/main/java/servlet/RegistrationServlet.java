@@ -27,6 +27,6 @@ public class RegistrationServlet extends HttpServlet {
 			// JSPファイルを指定してフォワード
 			RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/failInRegistration.jsp");
 			dispatcher.forward(request, response);
-			}
+		}
 	}
 }
