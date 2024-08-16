@@ -47,7 +47,7 @@ public class RegistrationFormServlet extends HttpServlet {
         	// リクエストスコープにエラーメッセージのインスタンスを保存する
         	request.setAttribute("errorMessage", errorMessage);
             
-            // JSPファイルを指定してフォワード
+        	// JSPファイルを指定してフォワード
         	RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/registrationForm.jsp");
         	dispatcher.forward(request, response);
         }
