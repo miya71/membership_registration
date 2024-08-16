@@ -17,38 +17,38 @@ public class CheckRegistrationForm {
 		checkPassword(password);
 		return errorMessage;
 	}
-    // 文字列を受け取って空かどうか判定するメソッド
-    private void checkNull(String target, String targetName) {
-        if(target == null || target.isEmpty()) {
-            errorMessage += targetName + "が入力されていません。<br>";
-        }
-    }
+	// 文字列を受け取って空かどうか判定するメソッド
+	private void checkNull(String target, String targetName) {
+		if(target == null || target.isEmpty()) {
+			errorMessage += targetName + "が入力されていません。<br>";
+		}
+	}
 	private void checkName(String name) {
-        checkNull(name, "名前");
+		checkNull(name, "名前");
 		// 以下チェック条件省略
 	}
 	private void checkGender(String gender) {
-        checkNull(gender, "性別");
+		checkNull(gender, "性別");
 		// 以下チェック条件省略
 	}
 	private void checkYear(String year) {
-        checkNull(year, "生年月日(年)");
+		checkNull(year, "生年月日(年)");
 		// 以下チェック条件省略
 	}
 	private void checkMonth(String month) {
-        checkNull(month, "生年月日(月)");
+		checkNull(month, "生年月日(月)");
 		// 以下チェック条件省略
 	}
 	private void checkDay(String day) {
-        checkNull(day, "生年月日(日)");
+		checkNull(day, "生年月日(日)");
 		// 以下チェック条件省略
 	}
 	private void checkEmail(String email) {
-        checkNull(email, "メールアドレス");
+		checkNull(email, "メールアドレス");
 		// 以下チェック条件省略
 	}
 	private void checkPassword(String password) {
-        checkNull(password, "パスワード");
+		checkNull(password, "パスワード");
 		// 以下チェック条件省略
 	}
 }
