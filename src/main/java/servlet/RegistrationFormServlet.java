@@ -39,17 +39,17 @@ public class RegistrationFormServlet extends HttpServlet {
         	MemberBean memberBean = new MemberBean(name, gender, year, month, day, email, password);
         	HttpSession session = request.getSession();
         	session.setAttribute("memberBean", memberBean);
-            
-            // JSPファイルを指定してフォワード
-            RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/confirmRegistrationForm.jsp");
-            dispatcher.forward(request, response);
+        	
+        	// JSPファイルを指定してフォワード
+        	RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/confirmRegistrationForm.jsp");
+        	dispatcher.forward(request, response);
         } else {
         	// リクエストスコープにエラーメッセージのインスタンスを保存する
         	request.setAttribute("errorMessage", errorMessage);
             
             // JSPファイルを指定してフォワード
         	RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/registrationForm.jsp");
-            dispatcher.forward(request, response);
+        	dispatcher.forward(request, response);
         }
 
     }
