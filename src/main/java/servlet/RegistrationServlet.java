@@ -12,11 +12,12 @@ import jakarta.servlet.http.HttpSession;
 import model.RegistrationLogic;
 
 public class RegistrationServlet extends HttpServlet {
-    @Override
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	// セッションスコープからBeanのインスタンスを受け取る
+		// セッションスコープからBeanのインスタンスを受け取る
 		HttpSession session = request.getSession();
 		MemberBean memberBean = (MemberBean)session.getAttribute("memberBean");
+		
 		// LogicにBeanのインスタンスを渡して処理結果を受け取る
 		RegistrationLogic registrationLogic = new RegistrationLogic();
 		if(registrationLogic.excute(memberBean)) {
