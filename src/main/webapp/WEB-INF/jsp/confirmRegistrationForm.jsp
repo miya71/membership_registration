@@ -7,7 +7,7 @@ MemberBean memberBean = (MemberBean)session.getAttribute("memberBean");
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
-	<meta charset="UTF-8">
+		<meta charset="UTF-8">
 		<title>登録確認</title>
 	</head>
 	<body>
