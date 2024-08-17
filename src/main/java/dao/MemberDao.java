@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import bean.MemberBean;
-import model.DBLoginLogic;
+import model.DBLoginConfig;
 
 public class MemberDao {
 	private Connection con = null;
@@ -16,11 +16,11 @@ public class MemberDao {
 	private String pass;
 	
 	public MemberDao() throws IOException {
-		DBLoginLogic dbLoginLogic = new DBLoginLogic();
-		dbLoginLogic.setAll();
-		url = dbLoginLogic.getUrl();
-		user = dbLoginLogic.getUser();
-		pass = dbLoginLogic.getPass();
+		DBLoginConfig dbLoginConfig = new DBLoginConfig();
+		dbLoginConfig.setAll();
+		url = dbLoginConfig.getUrl();
+		user = dbLoginConfig.getUser();
+		pass = dbLoginConfig.getPass();
 	}
 	
 	public boolean insert(MemberBean memberBean) {

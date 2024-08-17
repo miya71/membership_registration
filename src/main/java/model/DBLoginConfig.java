@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.Properties;
 
-public class DBLoginLogic {
+public class DBLoginConfig {
 	private String url;
 	private String user;
 	private String pass;
