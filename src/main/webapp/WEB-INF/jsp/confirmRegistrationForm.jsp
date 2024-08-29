@@ -34,15 +34,14 @@ MemberBean memberBean = (MemberBean)session.getAttribute("memberBean");
 					<h3>生年月日</h3>
 					<p><%= memberBean.getYear() %>年<%= memberBean.getMonth() %>月<%= memberBean.getDay() %>日</p>
 				</div>
-				<div>
+				<div class="row">
 					<h3>メールアドレス</h3>
 					<p><%= memberBean.getEmail() %></p>
 				</div>
-				<div>
+				<div class="row">
 					<h3>パスワード</h3>
 					<p><%= memberBean.getPassword() %></p>
 				</div>
-				<div>
 				<div class="flex-button">
 					<div class="white-button"><a href="RegistrationFormServlet">戻る</a></div>
 					<div class="black-button"><a href="RegistrationServlet">登録</a></div>
