@@ -8,17 +8,46 @@ MemberBean memberBean = (MemberBean)session.getAttribute("memberBean");
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
-		<title>登録確認</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>入力内容確認</title>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<header id="header">
+			<div class="flex-item wrapper">
+				<h1><a href="IndexServlet">SampleSite</a></h1>
+			</div>
+		</header>
 		<main>
-			<p>名前：<%= memberBean.getName() %></p>
-			<p>性別：<%= memberBean.getGender() %></p>
-			<p>生年月日：<%= memberBean.getYear() %>年<%= memberBean.getMonth() %>月<%= memberBean.getDay() %>日</p>
-			<p>メールアドレス：<%= memberBean.getEmail() %></p>
-			<p>パスワード：<%= memberBean.getPassword() %></p>
-			<p><a href="RegistrationFormServlet">戻る</a></p>
-			<p><a href="RegistrationServlet">登録</a></p>
+			<section id="confirm-registration">
+				<h2>入力内容確認</h2>
+				<p>入力内容を確認の上、登録ボタンをクリックしてください。</p>
+				<div class="row">
+					<h3>名前</h3>
+					<p><%= memberBean.getName() %></p>
+				</div>
+				<div class="row">
+					<h3>性別</h3>
+					<p><%= memberBean.getGender() %></p>
+				</div>
+				<div class="row">
+					<h3>生年月日</h3>
+					<p><%= memberBean.getYear() %>年<%= memberBean.getMonth() %>月<%= memberBean.getDay() %>日</p>
+				</div>
+				<div>
+					<h3>メールアドレス</h3>
+					<p><%= memberBean.getEmail() %></p>
+				</div>
+				<div>
+					<h3>パスワード</h3>
+					<p><%= memberBean.getPassword() %></p>
+				</div>
+				<div>
+				<div class="flex-button">
+					<div class="white-button"><a href="RegistrationFormServlet">戻る</a></div>
+					<div class="black-button"><a href="RegistrationServlet">登録</a></div>
+				</div>
+			</section>
 		</main>
 	</body>
 </html>

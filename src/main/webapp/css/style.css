@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+ul {
+	padding-left: 0;
+}
+li {
+	list-style: none;
+}
+h1 {
+	font-weight: normal;
+}
+h2 {
+	font-weight: normal;
+	text-align: center;
+}
+body {
+	background-color: #ffffff;
+	color: #333333;
+	font-size: 80%;
+}
+form {
+	width: 320px;
+	margin: 0 auto;
+}
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+.red {
+	color: #ff0000;
+}
+.white-button {
+	background-color: #ffffff;
+	color: #333333;
+	text-align: center;
+	padding: 5px 0px;
+	border-radius: 10px;
+	border: 1px solid #333333;
+}
+.white-button a {
+	display: block;
+}
+.black-button {
+	background-color: #000000;
+	color: #ffffff;
+	text-align: center;
+	padding: 5px 0px;
+	border-radius: 10px;
+}
+.black-button a {
+	display: block;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+	border-bottom: 2px solid #f5f5f5;
+}
+#header .flex-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#header ul {
+	display: flex;
+}
+#header li {
+	margin-left: 30px;
+}
+
+/*-------------------------------------------
+登録フォーム
+-------------------------------------------*/
+#registration-form {
+	width: 320px;
+	margin: 0 auto;
+	padding: 50px 0px;
+}
+#registration-form h2 {
+	margin-bottom: 50px
+}
+#registration-form .label-title {
+	display: block;
+}
+#registration-form .text-box {
+	display: block;
+	width: 100%;
+}
+#registration-form .row {
+	margin-bottom: 10px;
+}
+
+/*-------------------------------------------
+入力内容確認
+-------------------------------------------*/
+#confirm-registration {
+	width: 320px;
+	margin: 0 auto;
+	padding: 50px 0px;
+}
+#confirm-registration h2 {
+	margin-bottom: 50px;
+}
+#confirm-registration p {
+	margin-bottom: 10px;
+}
+#confirm-registration .row {
+	margin-bottom: 10px;
+}
+#confirm-registration .flex-button {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+#confirm-registration .white-button {
+	width: 100px;
+}
+#confirm-registration .black-button {
+	width: 100px;
+}
+
+/*-------------------------------------------
+会員登録完了
+-------------------------------------------*/
+#succeed-in-registration {
+	width: 320px;
+	margin: 0 auto;
+	padding: 50px 0px;
+}
+#succeed-in-registration h2 {
+	margin-bottom: 50px;
+}
+#succeed-in-registration p {
+	text-align: center;
+	margin-bottom: 50px;
+}
+#succeed-in-registration .black-button {
+	width: 100px;
+	margin: 0 auto;
+}
+
+/*-------------------------------------------
+会員登録エラー
+-------------------------------------------*/
+#fail-in-registration {
+	width: 320px;
+	margin: 0 auto;
+	padding: 50px 0px;
+}
+#fail-in-registration h2 {
+	margin-bottom: 50px;
+}
+#fail-in-registration p {
+	text-align: center;
+	margin-bottom: 50px;
+}
+#fail-in-registration .black-button {
+	width: 100px;
+	margin: 0 auto;
+}
+
+/*-------------------------------------------
+レスポンシブ
+-------------------------------------------*/
+@media screen and (max-width: 1000px) {
+	.wrapper {
+		width: 320px;
+	}
+	#header .flex-item {
+		flex-direction: column;
+	}
+	#header h1 {
+		text-align: center;
+	}
+	#header li:first-child {
+		margin-left: 0;
+	}
+}
