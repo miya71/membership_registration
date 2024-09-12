@@ -127,19 +127,19 @@ form {
 /*-------------------------------------------
 会員登録完了
 -------------------------------------------*/
-#succeed-in-registration {
+#completed-registration {
 	width: 320px;
 	margin: 0 auto;
 	padding: 50px 0px;
 }
-#succeed-in-registration h2 {
+#completed-registration h2 {
 	margin-bottom: 50px;
 }
-#succeed-in-registration p {
+#completed-registration p {
 	text-align: center;
 	margin-bottom: 50px;
 }
-#succeed-in-registration .black-button {
+#completed-registration .black-button {
 	width: 100px;
 	margin: 0 auto;
 }
@@ -147,19 +147,19 @@ form {
 /*-------------------------------------------
 会員登録エラー
 -------------------------------------------*/
-#fail-in-registration {
+#registration-error {
 	width: 320px;
 	margin: 0 auto;
 	padding: 50px 0px;
 }
-#fail-in-registration h2 {
+#registration-error h2 {
 	margin-bottom: 50px;
 }
-#fail-in-registration p {
+#registration-error p {
 	text-align: center;
 	margin-bottom: 50px;
 }
-#fail-in-registration .black-button {
+#registration-error .black-button {
 	width: 100px;
 	margin: 0 auto;
 }

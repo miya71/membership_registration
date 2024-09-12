@@ -15,7 +15,7 @@
 			</div>
 		</header>
 		<main>
-			<section id="fail-in-registration">
+			<section id="registration-error">
 				<h2>会員登録エラー</h2>
 				<p>会員登録に失敗しました。</p>
 				<div class="black-button"><a href="IndexServlet">トップに戻る</a></div>

@@ -22,11 +22,11 @@ public class RegistrationServlet extends HttpServlet {
 		RegistrationLogic registrationLogic = new RegistrationLogic();
 		if(registrationLogic.excute(memberBean)) {
 			// JSPファイルを指定してフォワード
-			RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/succeedInRegistration.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/completedRegistration.jsp");
 			dispatcher.forward(request, response);
 		} else {
 			// JSPファイルを指定してフォワード
-			RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/failInRegistration.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/registrationError.jsp");
 			dispatcher.forward(request, response);
 		}
 	}
